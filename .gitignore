@@ -1,0 +1,19 @@
+# LaTeX auxiliary files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.xdv
+*.bbl
+*.blg
+*.toc
+*.lof
+*.lot
+*.run.xml
+*.bcf
+
+# PDF output (compiled on-demand or by GitHub Actions)
+src/resume.pdf
+*.pdf

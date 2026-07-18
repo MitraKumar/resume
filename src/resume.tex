@@ -1,0 +1,115 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=0.5in, right=0.5in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+
+\titleformat{\section}{\large\bfseries\color{darkgray}}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{1ex}{1ex}
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeProject}[2]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+    \textbf{\Huge Kaushik Kumar Mitra} \\ \vspace{2pt}
+    45/1 R.N. Das Road, Kolkata 700031 $|$ (+91) 9674391121 $|$ \href{mailto:kaushik0976@gmail.com}{\underline{kaushik0976@gmail.com}}
+\end{center}
+
+\section{Summary}
+\small{Software developer with 6+ years of experience in backend development using NestJS (NodeJS), Drupal and Wordpress. Skilled in frontend technologies like NextJS, HTML, CSS, JavaScript, and React. Experienced with Docker and Terraform for containerization and infrastructure automation in cloud environments.}
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Backend Technologies}{: Node.js, NestJS, TypeScript, JavaScript, PHP, Drupal 8/9/10, WordPress} \\
+     \textbf{Databases \& Connectivity}{: MySQL, phpMyAdmin, RESTful APIs, OAuth Integration} \\
+     \textbf{DevOps \& Cloud}{: Docker, docker-compose, Terraform, AWS (EC2), Lando, DDEV} \\
+     \textbf{Frontend}{: Next.js, React, HTML, CSS, Tailwind CSS} \\
+     \textbf{Tools \& Automation}{: Git, GitHub/GitLab, Bash Scripting, Claude (Projects/Skills), Gemini Gems}
+    }}
+\end{itemize}
+
+\section{Experience}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \resumeSubheading
+    {Sundew Solutions Pvt. Ltd., Kolkata}{April 2024 -- PRESENT}
+    {Technical Associate}{}
+    \begin{itemize}[leftmargin=0.15in]
+        \resumeItem{Led the comprehensive architectural revamp of the IIT Kanpur website using Drupal 10, modernizing the platform's core infrastructure and accessibility.}
+        \resumeItem{Engineered a secure, centralized user authentication system by integrating LDAP to handle seamless access control across the institution.}
+        \resumeItem{Developed a custom visitor tracking system and designed interactive data dashboards to monitor site traffic, user engagement, and analytics.}
+        \resumeItem{Optimized frontend architecture to achieve perfect Cumulative Layout Shift (CLS) scores and 90+ ratings in SEO and Best Practices across both mobile and desktop platforms.}
+        \resumeItem{Involved in planning and architectural design of the Drupal site.}
+        \resumeItem{Assisted in project planning and creating Software Requirement Specifications (SRS) for client deliverables.}
+        \resumeItem{Engineered scalable backend applications and RESTful APIs using Node.js, establishing robust database connectivity to support dynamic client applications.}
+        \resumeItem{Leveraged custom Claude Projects and Gemini Gems to accelerate the development lifecycle, optimizing debugging workflows and reducing time-to-delivery for complex CMS migrations and backend integrations.}
+        \resumeItem{Led custom WordPress plugin development, extending core CMS functionality and optimizing backend architecture to meet precise client specifications.}
+    \end{itemize}
+
+  \resumeSubheading
+    {Innoraft Solutions Pvt. Ltd., Kolkata}{January 2020 -- April 2024}
+    {Software Developer}{}
+    \begin{itemize}[leftmargin=0.15in]
+        \resumeItem{Implemented Drupal as a headless CMS for LTTS Tech Tadka, engineering custom REST API routes and integrating Microsoft OAuth for secure user authentication.}
+        \resumeItem{Executed comprehensive site migrations from Drupal 7 to Drupal 9, utilizing CSV data pipelines to ensure seamless data transfer.}
+        \resumeItem{Architected and deployed custom administrative dashboards to streamline the extraction and analysis of webform submission results.}
+        \resumeItem{Redesigned webforms and optimized Drupal CMS fields, significantly improving the user experience and operational workflow for the content team.}
+        \resumeItem{Designed modular architectural components that empowered content editors to intuitively manage site content without requiring HTML expertise.}
+    \end{itemize}
+\end{itemize}
+
+\section{Projects}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \resumeProject
+    {Mail Server Infrastructure}{}
+    \begin{itemize}[leftmargin=0.15in]
+        \resumeItem{Leveraged Terraform as an Infrastructure as Code (IaC) tool to provision an AWS EC2 instance.}
+        \resumeItem{Configured necessary security groups and deployed a self-hosted, containerized mail server using Mailcow.}
+        \resumeItem{\textbf{Git Repo:} \href{https://github.com/MitraKumar/mailcow-server-infra}{\underline{https://github.com/MitraKumar/mailcow-server-infra}}}
+    \end{itemize}
+
+  \resumeProject
+    {Portfolio Website}{}
+    \begin{itemize}[leftmargin=0.15in]
+        \resumeItem{Built a highly responsive portfolio website utilizing NextJS and Tailwind CSS.}
+        \resumeItem{Handled deployment and CI/CD pipelines via Vercel.}
+        \resumeItem{\textbf{Git Repo:} \href{https://github.com/MitraKumar/portfolio}{\underline{https://github.com/MitraKumar/portfolio}}}
+    \end{itemize}
+\end{itemize}
+
+\section{Technical Writing}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \resumeItem{\textbf{Publishing a Node.js Package:} Documented the end-to-end process of building, configuring with TypeScript and ESLint, and publishing an NPM package. \href{https://dev.to/mitrakumar/journey-of-creating-and-publishing-a-nodejs-package-with-typescript-eslint-support-3gh7}{\underline{[Read Article]}}}
+  \resumeItem{\textbf{Next.js App Router \& Markdown:} Authored a guide on utilizing Markdown for dynamic content management within modern Next.js applications. \href{https://dev.to/mitrakumar/using-markdown-to-manage-content-to-nextjs-app-router-420j}{\underline{[Read Article]}}}
+  \resumeItem{\textbf{DDEV \& Lando Routing:} Explored the underlying Docker networking and reverse proxy mechanisms powering local development environments. \href{https://dev.to/mitrakumar/magic-behind-ddev-lando-routing-37m}{\underline{[Read Article]}}}
+  \resumeItem{\textbf{AWS EC2 Mail Server Infrastructure:} Detailed the provisioning and deployment of a containerized Mailcow server using Terraform. \href{https://dev.to/mitrakumar/setting-up-mailcow-on-mail-server-on-an-ec2-instance-2bf6}{\underline{[Read Article]}}}
+\end{itemize}
+
+\section{Education}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \item \small{\textbf{B. Tech:} Budge Budge Institute of Technology, Kolkata (2020)}
+  \vspace{-3pt}
+  \item \small{\textbf{Higher Secondary:} Andrew's High School, Kolkata (2016)}
+  \vspace{-3pt}
+  \item \small{\textbf{Secondary:} Andrew's High School, Kolkata (2014)}
+\end{itemize}
+
+\end{document}
