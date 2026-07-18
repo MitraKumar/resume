@@ -20,15 +20,18 @@ jobs:
         with:
           root_file: src/resume.tex
 
+      - name: Rename PDF
+        run: mv src/resume.pdf "src/Kaushik Kumar Mitra - CV.pdf"
+
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v4
         with:
           name: resume-pdf
-          path: src/resume.pdf
+          path: "src/Kaushik Kumar Mitra - CV.pdf"
 
       - name: Upload to Release
         if: github.event_name == 'release'
         run: |
-          gh release upload ${{ github.event.release.tag_name }} src/resume.pdf --clobber
+          gh release upload ${{ github.event.release.tag_name }} "src/Kaushik Kumar Mitra - CV.pdf" --clobber
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

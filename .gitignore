@@ -15,5 +15,5 @@
 *.bcf
 
 # PDF output (compiled on-demand or by GitHub Actions)
-src/resume.pdf
+src/Kaushik Kumar Mitra - CV.pdf
 *.pdf
