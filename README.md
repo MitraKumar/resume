@@ -15,8 +15,8 @@ This repository contains the LaTeX source code for my professional resume, along
 The GitHub Actions workflow automates the LaTeX compilation using the standard `pdflatex` engine (via `xu-cheng/latex-action`).
 
 ### Workflow Triggers & Actions:
-1. **GitHub Release Publication**: When a release is published, the workflow compiles the resume, renames the output to `Kaushik Kumar Mitra - CV.pdf`, and automatically attaches it to the release assets using the GitHub CLI (`gh release upload`).
-2. **Manual Trigger (`workflow_dispatch`)**: Allows compiling the PDF on-demand from the GitHub Actions tab, producing the `Kaushik Kumar Mitra - CV.pdf` workflow artifact.
+1. **GitHub Release Publication**: When a release is published, the workflow compiles the resume, renames the output to `Kaushik-Kumar-Mitra-CV.pdf`, and automatically attaches it to the release assets using the GitHub CLI (`gh release upload`).
+2. **Manual Trigger (`workflow_dispatch`)**: Allows compiling the PDF on-demand from the GitHub Actions tab, producing the `Kaushik-Kumar-Mitra-CV.pdf` workflow artifact.
 
 ---
 
@@ -48,4 +48,4 @@ To generate the final PDF and attach it to a release:
 3. Choose a tag version (e.g., `v1.0.0` or `v2026.07.18`).
 4. Enter a release title and description.
 5. Click **Publish release**.
-6. The GitHub Action will trigger, compile the PDF, rename it, and attach the compiled `Kaushik Kumar Mitra - CV.pdf` to the release assets.
+6. The GitHub Action will trigger, compile the PDF, rename it, and attach the compiled `Kaushik-Kumar-Mitra-CV.pdf` to the release assets.
